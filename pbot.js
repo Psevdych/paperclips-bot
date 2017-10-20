@@ -28,11 +28,21 @@ var driver = new Builder()
     .build();
 
 driver.get('http://www.decisionproblem.com/paperclips/index2.html')
-    .then(_ => driver.findElement(By.id('btnMakePaperclip')))
-    .then(btn => setInterval(
-        function(){
-            btn.click();
-        }, 10));
+    .then(_ => main());
+//    .then(_ => setInterval(
+//        function(){
+//	    var btn = driver.findElement(By.id('btnMakePaperclip'))
+//	    if (btn.isDisplayed() && btn.isEnabled()) {
+//                btn.click();
+//	    }
+//        }, 10));
+
+function main() {
+    var btn = driver.findElement(By.id('btnMakePaperclip'));
+    setInterval(function(){
+        btn.click();
+    }, 10);
+}
 
 //var q = driver.wait(driver.findElement(By.id('btnMakePaperclip')).isClickable(), 15);
 //    return driver.isElementPresent(By.id('btnMakePaperclip')).isClickable();
