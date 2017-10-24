@@ -1,0 +1,19 @@
+{
+  "name": "paperclips-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "pbot.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Psevdych/paperclips-bot.git"
+  },
+  "author": "Psevdych",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/Psevdych/paperclips-bot/issues"
+  },
+  "homepage": "https://github.com/Psevdych/paperclips-bot#readme",
+  "dependencies": {
+    "selenium-webdriver": "^3.6.0"
+  }
+}
